@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+
+nav#toplinks a{
+   color:rgb(255,255,255);
+   text-shadow:rgba(0,0,0,1) 1px -1px 1px;
+   transform:scale(1,1) translateY(0px);
+   transition: all 1.2s linear;
+}
+
+nav#topLinks a:hover {
+   color: rgb(255,183,25);
+   text-shadow:rgba(0,0,0,0.5) 0px 15px 4px;
+   transform: scale(2,2) translateY(-15px);
+}
+
+
+div#marquee {
+   position: relative;
+}
+div#marquee table {
+   position: absolute;
+}
+
+
+div#marquee table {
+   animation: scroll 50s linear infinite;
+}
+
+div#marquee:hover table {
+   animation-play-state:paused;
+}

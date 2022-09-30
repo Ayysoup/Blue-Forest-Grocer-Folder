@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <style type="text/css">
+        
+
+       
+        textarea{
+            display:block;
+            width:80%;
+            height: 100px;
+            background-color:azure;
+            padding-left: 10px;
+            opacity: 0.9;
+
+        }
+        form {
+            border:5px solid red;
+            width:80%;
+            box-shadow: 10px 10px yellow;
+
+             opacity: 0.9;
+
+     
+            
+           
+        }
+        h1 {
+
+            width:60%;
+            text-align: center;
+            opacity: 0.9;
+            color:rgba(46, 44, 44, 0.85);
+}
+
+
+        
+
+
+    </style>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link  href="All.css" rel="stylesheet">
+ 
+    <title>Feedback</title>
+       
+    </head>
+
+
+    <p id="time"></p>
+    <header>
+        <nav>
+           
+            <a href="grocer_home.html">Home</a>
+            &nbsp;
+            <a href="grocer_contact.html">Contact</a>
+            &nbsp;
+            <a href="grocer_account.html">Account</a>
+            &nbsp;
+            <a href="AboutUs.html">About Us</a>
+            &nbsp;
+            <a href="Career.html">Career</a> 
+            &nbsp;
+            <a href="feedback.html"> Feedback</a> 
+            &nbsp;
+            <a href="grocer_delivery.html">Delivery</a>
+            &nbsp;
+            <a href="grocer_FAQ.html">FAQ</a> 
+            &nbsp;
+            <a href="item list & add to cart.html">Item list</a> 
+            &nbsp;
+            <a href="membership.html">Membership</a> 
+            &nbsp;
+            <a href="order_history.html">History</a> 
+            &nbsp;
+            <a href="announcements.html">Announcements</a> 
+            &nbsp;
+            <a href="index.html">Index</a>
+            &nbsp;
+            <button type="login" value="Login">
+            <a href="grocer_login.html"> Login</a></button>
+          </nav>
+        
+       </header>
+   
+    <body background="grocery.jpg">
+<h1>Customer FeedBack</h1>
+    <script>
+        const d = new Date();
+        document.getElementById("time").innerHTML = d;
+        </script>
+<form name="Feedback" id="FeedBack">
+<label for ="customername">Customer Name:</label>
+<input type="text" id="customername" name="customername"></br></br>
+<label>Contact Number:</label>
+<input type="tel" id="Contact" name="Contact"
+placeholder="(012) 3456-7890"
+pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{4}[\s-]?\d{4}$" /></br></br>
+<label for ="email">Email:</label>
+<input type="text" id="email" id="email"><br><br> 
+<label for="review">Review:</label>
+<textarea  id="review" name="review"></textarea></br></br>
+<label for="rating">Rating:</label>
+<input type="radio" id="Rating1" name="Rating" value="1">
+<label for ="1star">1</label>
+<input type="radio" id="Rating2" name="Rating" value="2">
+<label for ="2star">2</label>
+<input type="radio" id="Rating3" name="Rating" value="3">
+<label for ="3star">3</label>
+<input type="radio" id="Rating4" name="Rating" value="4">
+<label for ="4star">4</label>
+<input type="radio" id="Rating5" name="Rating" value="5">
+<label for ="5star">5</label></br></br>
+<label style="color:blue">Any Suggestion?</label></br></br>
+<textarea name="Suggestion" id="Suggestion" placeholder="Please type in your Suggestion"></textarea></br></br>
+<label>lastest order date?</label>
+<input type="datetime-local" id="lastest" name="lastest"></br></br>
+<label for="GetToKnow">How to u get to know our e-grocery?</label></br></br>
+<input id="GetToKnow" name="GetToKnow" type="text" list="How"/>
+<datalist id="How">
+<option value="Social Media" />
+<option value="From your friend/family member" />
+<option value="Google" />
+<option value="Advertisement" />
+<option value="Poster"/>
+<option value="From other way"/>
+</datalist>
+</br></br>
+<label for="recomended">Would you share our e-grocery to others?</label></br></br>
+<input type="radio" id="yes" name="yes">
+<label for="yes">Yes</label>
+<input type="radio" id="no" name="no">
+<label for="no">No</label>
+<legend>Is there anything you want to tell us?</legend>
+<textarea id="anything" name="anything"></textarea></br></br>
+<input type="submit" onclick="submit();" value="Submit"  />
+<input type="reset"value="Reset" />
+</form>
+</body>
+<script>
+    function submit() {
+    alert('Thanks for submit this for,Has a nice day!');
+    }
+</script>
+</html>

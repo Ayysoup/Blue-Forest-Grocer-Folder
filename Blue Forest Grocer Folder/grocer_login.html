@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <nav>
+         
+        <li><a href="grocer_home.html">Home</a></li>
+        <a href="grocer_home.html">Home</a>
+        &nbsp;
+        <a href="grocer_contact.html">Contact</a>
+        &nbsp;
+        <a href="grocer_account.html">Account</a>
+        &nbsp;
+        <a href="AboutUs.html">About Us</a>
+        &nbsp;
+        <a href="Career.html">Career</a> 
+        &nbsp;
+        <a href="feedback.html"> Feedback</a> 
+        &nbsp;
+        <a href="grocer_delivery.html">Delivery</a>
+        &nbsp;
+        <a href="grocer_FAQ.html">FAQ</a> 
+        &nbsp;
+        <a href="item list & add to cart.html">Item list</a> 
+        &nbsp;
+        <a href="membership.html">Membership</a> 
+        &nbsp;
+        <a href="order_history.html">History</a> 
+        &nbsp;
+        <a href="announcements.html">Announcements</a> 
+        &nbsp;
+        <a href="index.html">Index</a>
+        &nbsp;
+        <button type="login" value="Login">
+        <a href="grocer_login.html"> Login</a></button>
+    </nav>
+<head>
+<script>
+    function validateForm(){
+        var x= document.forms["myForm"] ["fname"].value;
+        if(x==""){
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+</script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()"
+    method="post">
+    Name:<input type="text" name="fname">
+    
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Delivery</title>
+   <link rel="stylesheet" href="styles.css">
+   <link href="grocer_base.css" rel="stylesheet" />
+   <link href="grocer_layout.css" rel="stylesheet" />
+   <link href="grocer_design.css" rel="stylesheet" />
+</head>
+
+<body>
+   
+    
+      <header>
+         <a href="grocer_home.html"><img src="grocer_logo.png" alt="Grocer" width="125" height="125" /></a>
+         <nav>
+            <ul>
+               <li><a href="grocer_home.html">Home</a></li>
+               <li><a href="grocer_contact.html">Contact</a></li>
+               <li><a href="grocer_account.html">Account</a></li>
+              
+               <li><a href="AboutUs.html">About Us</a></li>
+               <li><a href="Career.html">Career</a> </li>
+               <li><a href="feedback.html"> Feedback</a> </li>
+               <li><a href="grocer_delivery.html">Delivery</a></li>
+               <li><a href="grocer_FAQ.html">FAQ</a> </li>
+               <li><a href="item list & add to cart.html">Item list</a> </li>
+               <li><a href="membership.html">Membership</a> </li>
+               <li><a href="order_history.html">History</a> </li>
+               <li><a href="announcements.html">Announcements</a> </li>
+               <li><a href="index.html">Index</a> </li>
+               <button type="login" value="Login">
+               <a href="grocer_login.html"> Login</a></button>
+               </ul>
+         </nav>
+   </header>
+   <section>
+      <h1>Customer Information</h1>
+      <p>Thank you for using our web page. Please enter your name and phone number if you
+         want to place an order for delivery.
+      <form action="" method="post">
+         <div>
+            <label for="nameBox">Name*</label>               
+            <input name="custName" id="nameBox" type="text" placeholder="First and Last Name" required />
+         </div>
+         <div>
+            <label for="phoneBox">Phone*</label>
+            <input name="custPhone" id="phoneBox" type="tel" required 
+            placeholder="(nnn) nnn-nnnn"
+            pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+         </div>
+         <div>
+            <input name="orderType" id="delivery" type="radio" checked/><label for="delivery">Delivery</label>
+            
+         </div>
+            <fieldset id="deliveryInfo">
+               <legend>Delivery Options</legend>
+               <textarea name="deliAddress" id="addressBox" placeholder="Enter delivery address"></textarea>
+               <div>
+                  <label for="delBox">Delivery Time (leave blank for earliest delivery)</label>
+                  <input name="delTime" id="delBox" type="time"/>
+               </div>
+            </fieldset>
+            
+            <div>
+               <input type="submit" value="Submit"/>
+            </div>
+         </form>
+      </section>
+
+   <footer>
+     
+   </footer>
+</body>
+</html>
