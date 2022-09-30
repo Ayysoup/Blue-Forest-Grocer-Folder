@@ -1,19 +1,5 @@
 @charset "utf-8";
 
-/*
-   New Perspectives on HTML and CSS
-   Tutorial 7
-   Review Assignment
-
-   Red Ball Pizza General Style Sheet
-  
-   Filename: rb_styles2.css
-
-*/
-
-
-/* HTML and Body styles */
-
 html {
    background: #c6d8af ;
    font-family: Verdana, Geneva, sans-serif;
@@ -34,7 +20,7 @@ body {
 }
 
 
-/* Header styles */
+
 
 header img#logoimg {
    width: 100%;
@@ -48,7 +34,7 @@ header {
 
 
 
-/* Navigation list styles */
+
 
 header nav ul li {
    font-size: 1.2em; 
@@ -90,7 +76,7 @@ section p {
 
 
 
-/* Footer styles */   
+
 
 footer {
    color: white;    
@@ -133,10 +119,7 @@ footer address {
    font-style: normal;
 }
 
-/* ===============================
-   Mobile Styles: 0px to 640px 
-   ===============================
-*/
+
 @media only screen and (max-width: 640px) {
 
    
@@ -167,10 +150,7 @@ footer address {
    }
 }
 
-/* =============================================
-   Tablet and Desktop Styles: greater than 640px
-   =============================================
-*/
+
 @media only screen and (min-width: 641px) {
 
    body header nav ul {
