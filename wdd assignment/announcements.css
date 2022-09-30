@@ -1,0 +1,29 @@
+form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+ } 
+ 
+ fieldset {
+    background-color: rgb(234, 189, 142);
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px; 
+    margin: 10px;  
+ }
+ 
+ div {
+    margin: 5px;
+    width: 100%;
+ }
+
+.news-date{
+    color:black;
+    list-style: none;
+ }
+
+.news-title{
+    color:rgb(80, 80, 212);
+    justify-content: right;
+    list-style: none;
+ }

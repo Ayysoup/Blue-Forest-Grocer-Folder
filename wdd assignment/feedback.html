@@ -1,0 +1,118 @@
+<html>  
+    <style type="text/css">
+        body {
+            
+            font-size: 1.5em;
+            font-weight: 150;
+            text-align:left ;
+            background-color: beige;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 120px;
+ }
+        textarea{
+            display:block;
+            width:65%;
+            height: 100px;
+            background-color:azure;
+            padding-left: 10px;
+
+        }
+        form {
+            border:5px solid red;
+            width:60%;
+            box-shadow: 10px 10px yellow;
+         
+            
+           
+        }
+        h1 {
+            background-color: yellowgreen;
+            width:60%;
+            text-align: center;
+        }
+
+    </style>
+    <p id="time"></p>
+    <header>
+        <a href="grocer_home.html"><img src="grocer_logo.png" alt="Grocer" /></a>
+        <nav>
+           
+              <a href="grocer_home.html">Home</a></li>
+              <a href="grocer_contact.html">Contact</a></li>
+              <a href="grocer_account.html">Account</a></li>
+              <a href="AboutUs.html">About Us</a></li>
+              <a href="Career.html">Career</a> </li>
+              <a href="feedback.html"> Feedback</a> </li>
+              <a href="grocer_delivery.html">delivery</a></li>
+              <a href="grocer_FAQ.html">FAQ</a> </li>
+              <a href="item list & add to cart.html">item list</a> </li>
+              <a href="membership.html">membership</a> </li>
+              <a href="order_history.html">history</a> </li>
+              <a href="announcements.html">announcements</a> 
+              <button type="login" value="Login">
+              <a href="grocer_login.html"> Login</a></button>
+          </nav>
+        
+       </header>
+   
+    <body>
+<h1>Customer FeedBack</h1>
+    <script>
+        const d = new Date();
+        document.getElementById("time").innerHTML = d;
+        </script>
+<form name="Feedback" id="FeedBack">
+<label for ="customername">Customer Name:</label>
+<input type="text" id="customername" name="customername"></br></br>
+<label>Contact Number:</label>
+<input type="tel" id="Contact" name="Contact"
+placeholder="(012) 3456-7890"
+pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{4}[\s-]?\d{4}$" /></br></br>
+<label for ="email">Email:</label>
+<input type="text" id="email" id="email"><br><br> 
+<label for="review">Review:</label>
+<textarea  id="review" name="review"></textarea></br></br>
+<label for="rating">Rating:</label>
+<input type="radio" id="Rating1" name="Rating" value="1">
+<label for ="1star">1</label>
+<input type="radio" id="Rating2" name="Rating" value="2">
+<label for ="2star">2</label>
+<input type="radio" id="Rating3" name="Rating" value="3">
+<label for ="3star">3</label>
+<input type="radio" id="Rating4" name="Rating" value="4">
+<label for ="4star">4</label>
+<input type="radio" id="Rating5" name="Rating" value="5">
+<label for ="5star">5</label></br></br>
+<label style="color:blue">Any Suggestion?</label></br></br>
+<textarea name="Suggestion" id="Suggestion" placeholder="Please type in your Suggestion"></textarea></br></br>
+<label>lastest order date?</label>
+<input type="datetime-local" id="lastest" name="lastest"></br></br>
+<label for="GetToKnow">How to u get to know our e-grocery?</label></br></br>
+<input id="GetToKnow" name="GetToKnow" type="text" list="How"/>
+<datalist id="How">
+<option value="Social Media" />
+<option value="From your friend/family member" />
+<option value="Google" />
+<option value="Advertisement" />
+<option value="Poster"/>
+<option value="From other way"/>
+</datalist>
+</br></br>
+<label for="recomended">Would you share our e-grocery to others?</label></br></br>
+<input type="radio" id="yes" name="yes">
+<label for="yes">Yes</label>
+<input type="radio" id="no" name="no">
+<label for="no">No</label>
+<legend>Is there anything you want to tell us?</legend>
+<textarea id="anything" name="anything"></textarea></br></br>
+<input type="submit" onclick="submit();" value="Submit"  />
+<input type="reset"value="Reset" />
+</form>
+</body>
+<script>
+    function submit() {
+    alert('Thanks for submit this for,Has a nice day!');
+    }
+</script>
+</html>

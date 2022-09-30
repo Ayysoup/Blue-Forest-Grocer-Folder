@@ -1,0 +1,40 @@
+form {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+ } 
+ 
+ fieldset {
+    background-color: rgb(234, 189, 142);
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px; 
+    margin: 10px;  
+ }
+ 
+ div {
+    margin: 5px;
+    width: 100%;
+ }
+ 
+ legend {
+    color: rgb(224, 186, 186);
+    background-color: rgb(60, 12, 12);
+ }
+
+.phone{
+    color: rgb(0, 95, 136);
+}
+
+button{
+   width: 300px;
+   height: 60px;
+   color:black;
+   background-color: white;
+   border: 2px solid grey;
+   font-size: 20px;
+}
+
+.aclass{
+   font-size: 22px;
+}
